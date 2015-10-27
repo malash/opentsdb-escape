@@ -29,6 +29,7 @@
   "homepage": "https://github.com/malash/opentsdb-escape#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
     "gulp-load-plugins": "^1.0.0",
     "gulp-tape": "0.0.4",
     "tap-colorize": "^1.2.0",
