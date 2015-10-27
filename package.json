@@ -1,0 +1,37 @@
+{
+  "name": "opentsdb-escape",
+  "version": "0.1.0",
+  "description": "Escape and unescape for OpenTSDB metrics and tags",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malash/opentsdb-escape.git"
+  },
+  "keywords": [
+    "opentsdb",
+    "escape"
+  ],
+  "author": {
+    "name": "Malash",
+    "email": "i@malash.me",
+    "url": "https://malash.me/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malash/opentsdb-escape/issues"
+  },
+  "homepage": "https://github.com/malash/opentsdb-escape#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-tape": "0.0.4",
+    "tap-colorize": "^1.2.0",
+    "tape": "^4.2.2"
+  }
+}
