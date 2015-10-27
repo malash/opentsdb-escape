@@ -35,4 +35,4 @@ That's all!
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent#Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent#Description)
 
-[http://opentsdb.net/docs/build/html/user_guide/writing.html](http://opentsdb.net/docs/build/html/user_guide/writing.html)
+[http://opentsdb.net/docs/build/html/user_guide/writing.html#metrics-and-tags](http://opentsdb.net/docs/build/html/user_guide/writing.html#metrics-and-tags)
