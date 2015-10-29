@@ -27,6 +27,11 @@ gulp.task('dev', function() {
 gulp.task('build', ['test'], function () {
     return gulp.src('lib/index.js')
         .pipe(plugins.webpack(require('./webpack.config.js')))
+        .pipe(gulp.dest('dist/'))
+        .pipe(plugins.uglify())
+        .pipe(plugins.rename(function (path) {
+            path.extname = '.min.js';
+        }))
         .pipe(gulp.dest('dist/'));
 });
 

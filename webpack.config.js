@@ -2,7 +2,7 @@ module.exports = {
     entry: './lib/index.js',
     output: {
         path: __dirname + '/dist',
-        filename: 'opentsdb-escape.min.js',
+        filename: 'opentsdb-escape.js',
         library: 'OpentsdbEscape',
         libraryTarget: 'umd'
     }
