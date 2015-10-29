@@ -1,0 +1,30 @@
+{
+  "name": "opentsdb-escape",
+  "version": "0.1.0",
+  "homepage": "https://github.com/malash/opentsdb-escape",
+  "description": "OpenTSDB Escape for Javascript",
+  "main": "dist/opentsdb-escape.min.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "opentsdb",
+    "escape"
+  ],
+  "authors": [
+    {
+      "name": "Malash",
+      "email": "i@malash.me"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
