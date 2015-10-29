@@ -27,6 +27,10 @@
     "url": "https://github.com/malash/opentsdb-escape/issues"
   },
   "homepage": "https://github.com/malash/opentsdb-escape#readme",
+  "engines": {
+    "node": ">=0.10.0",
+    "iojs": "*"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
