@@ -6,25 +6,41 @@ encodeURIComponent valid characters: ```a-z, A-Z, 0-9, - _ . ! ~' ( )```
 
 OpenTSDB valid characters: ```a-z, A-Z, 0-9, -, _, ., /```
 
-## Demo
+## Usage
+
+NPM: `npm install opentsdb-escape --save`
 
 ```javascript
-var tsdb = require('opentsdb-escape');
+var OpentsdbEscape = require('opentsdb-escape');
 var originStr = '!\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
-var escapedStr = tsdb.escape(originStr);
+var escapedStr = OpentsdbEscape.escape(originStr);
 console.log(escapedStr);
 // _21_22_23_24_25_26_27_28_29_2a_2B_2C-._2F0123456789_3A_3B_3C_3D_3E_3F_40ABCDEFGHIJKLMNOPQRSTUVWXYZ_5B_5C_5D_5E_5f_60abcdefghijklmnopqrstuvwxyz_7B_7C_7D_7e
-console.log(tsdb.unescape(escapedStr) === originStr);
+console.log(OpentsdbEscape.unescape(escapedStr) === originStr);
 // true
+```
+
+Bower: `bower install opentsdb-escape`
+
+```html
+<script src="/beep/bower_components/opentsdb-escape/dist/opentsdb-escape.min.js"></script>
+<script>
+var originStr = '!\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
+var escapedStr = OpentsdbEscape.escape(originStr);
+console.log(escapedStr);
+// _21_22_23_24_25_26_27_28_29_2a_2B_2C-._2F0123456789_3A_3B_3C_3D_3E_3F_40ABCDEFGHIJKLMNOPQRSTUVWXYZ_5B_5C_5D_5E_5f_60abcdefghijklmnopqrstuvwxyz_7B_7C_7D_7e
+console.log(OpentsdbEscape.unescape(escapedStr) === originStr);
+// true
+</script>
 ```
 
 ## Documentation
 
-### tsdb.escape
+### OpentsdbEscape.escape
 
 Escape an Unicode string.
 
-### tsdb.unescape
+### OpentsdbEscape.unescape
 
 
 Unescape an escaped string.

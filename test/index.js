@@ -2,14 +2,14 @@
 
 var test = require('tape');
 
-var tsdb = require('..');
+var OpentsdbEscape = require('..');
 var validOpenTSDBCharacters = /^[a-zA-Z0-9\-\_\.\/]*$/;
 
 test('ASCII character test', function (t) {
     for (var i = 0; i <= 255; i++) {
         var character = String.fromCharCode(i);
-        t.equal(tsdb.unescape(tsdb.escape(character)), character, 'char(' + i + ') test equal');
-        t.ok(validOpenTSDBCharacters.test(tsdb.escape(character)), 'char(' + i + ') test valid');
+        t.equal(OpentsdbEscape.unescape(OpentsdbEscape.escape(character)), character, 'char(' + i + ') test equal');
+        t.ok(validOpenTSDBCharacters.test(OpentsdbEscape.escape(character)), 'char(' + i + ') test valid');
     }
     t.end();
 });
@@ -84,8 +84,8 @@ test('Unicode character test', function (t) {
 
     };
     for (var key in unicodeSamples) {
-        t.equal(tsdb.unescape(tsdb.escape(unicodeSamples[key])), unicodeSamples[key], 'Unicode chars(' + key + ') test equal');
-        t.ok(validOpenTSDBCharacters.test(tsdb.escape(unicodeSamples[key])), 'Unicode chars(' + key + ') test valid');
+        t.equal(OpentsdbEscape.unescape(OpentsdbEscape.escape(unicodeSamples[key])), unicodeSamples[key], 'Unicode chars(' + key + ') test equal');
+        t.ok(validOpenTSDBCharacters.test(OpentsdbEscape.escape(unicodeSamples[key])), 'Unicode chars(' + key + ') test valid');
     }
     t.end();
 });
