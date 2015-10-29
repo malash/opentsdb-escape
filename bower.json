@@ -2,6 +2,10 @@
   "name": "opentsdb-escape",
   "version": "0.1.1",
   "homepage": "https://github.com/malash/opentsdb-escape",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malash/opentsdb-escape.git"
+  },
   "description": "OpenTSDB Escape for Javascript",
   "main": "dist/opentsdb-escape.min.js",
   "moduleType": [
