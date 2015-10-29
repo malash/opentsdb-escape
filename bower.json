@@ -1,6 +1,6 @@
 {
   "name": "opentsdb-escape",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/malash/opentsdb-escape",
   "repository": {
     "type": "git",
