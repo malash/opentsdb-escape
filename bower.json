@@ -1,6 +1,6 @@
 {
   "name": "opentsdb-escape",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/malash/opentsdb-escape",
   "description": "OpenTSDB Escape for Javascript",
   "main": "dist/opentsdb-escape.min.js",

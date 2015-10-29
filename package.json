@@ -1,6 +1,6 @@
 {
   "name": "opentsdb-escape",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Escape and unescape for OpenTSDB metrics and tags",
   "main": "lib/index.js",
   "directories": {
